@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'form-sample-app';
+
+  storedPosts=[];
+
+  onPostCreated(post){
+    this.storedPosts.push(post);
+  }
 }
