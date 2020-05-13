@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import {PostListComponent } from './posts/post-list/post-list.component'
 import {PostCreateComponent} from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
+import {PostsService} from './posts/post.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,7 @@ import { HeaderComponent } from './header/header.component';
     MatButtonModule,MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
